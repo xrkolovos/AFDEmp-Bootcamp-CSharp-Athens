@@ -10,6 +10,7 @@ namespace DemoEf6.Model
         public string Title { get; set; }
 
         //Navigation Property
+        [InverseProperty("Blog")]
         public virtual ICollection<Post> Posts { get; set; }
     }
 }

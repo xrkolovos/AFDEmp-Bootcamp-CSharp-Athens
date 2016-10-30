@@ -17,6 +17,7 @@ namespace DemoEf6.Model
         public int UserId { get; set; }
 
         //Navigation Property
+        [InverseProperty("Posts")]
         [ForeignKey("BlogId")]
         public virtual Blog Blog { get; set; }
         //Navigation Property
