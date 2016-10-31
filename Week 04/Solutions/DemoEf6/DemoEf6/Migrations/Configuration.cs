@@ -37,7 +37,7 @@ namespace DemoEf6.Migrations
             context.SaveChanges();
 
             var papadId = context.Users.FirstOrDefault(x => x.FullName == "Michalis Papadakis").Id;
-            var xrklvId = context.Users.FirstOrDefault(x => x.FullName == "Michalis Papadakis").Id;
+            var xrklvId = context.Users.FirstOrDefault(x => x.FullName == "Chrysostomos Kolovos").Id;
             var blog = context.Blogs.AsNoTracking().FirstOrDefault(x => x.Title == "My Ef Blog");
 
 
